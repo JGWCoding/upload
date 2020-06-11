@@ -1,0 +1,27 @@
+************* Log Head ****************
+Time Of Crash      : 06-11_15-39-26
+Device Manufacturer: Xiaomi
+Device Model       : Redmi K30 Pro
+Android Version    : 10
+Android SDK        : 29
+App VersionName    : 1.0
+App VersionCode    : 1
+************* Log Head ****************
+
+java.lang.IllegalArgumentException: View=DecorView@c96e950[MainActivity] not attached to window manager
+	at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:561)
+	at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:470)
+	at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:129)
+	at android.app.Dialog.dismissDialog(Dialog.java:391)
+	at android.app.Dialog.dismiss(Dialog.java:373)
+	at com.example.zw_engineering.ui.view.LoaddingView.dismiss(LoaddingView.java:59)
+	at com.example.zw_engineering.MainActivity$2.onSuccess(MainActivity.java:193)
+	at com.example.zw_engineering.MainActivity$2.onSuccess(MainActivity.java:162)
+	at com.blankj.utilcode.util.ThreadUtils$Task$2.run(ThreadUtils.java:1207)
+	at android.os.Handler.handleCallback(Handler.java:883)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:227)
+	at android.app.ActivityThread.main(ActivityThread.java:7544)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:539)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:953)
