@@ -1,0 +1,25 @@
+************* Log Head ****************
+Time Of Crash      : 06-11_15-38-27
+Device Manufacturer: Xiaomi
+Device Model       : Redmi K30 Pro
+Android Version    : 10
+Android SDK        : 29
+App VersionName    : 1.0
+App VersionCode    : 1
+************* Log Head ****************
+
+java.lang.RuntimeException: 自定义 我错了
+	at com.example.zw_engineering.MainActivity.Login(MainActivity.java:128)
+	at com.example.zw_engineering.MainActivity.access$000(MainActivity.java:71)
+	at com.example.zw_engineering.MainActivity$1.onClick(MainActivity.java:110)
+	at android.view.View.performClick(View.java:7164)
+	at android.view.View.performClickInternal(View.java:7141)
+	at android.view.View.access$3500(View.java:814)
+	at android.view.View$PerformClick.run(View.java:27429)
+	at android.os.Handler.handleCallback(Handler.java:883)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loop(Looper.java:227)
+	at android.app.ActivityThread.main(ActivityThread.java:7544)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:539)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:953)
