@@ -1,0 +1,49 @@
+************* Log Head ****************
+Time Of Crash      : 08-08_15-33-05
+Device Manufacturer: samsung
+Device Model       : SM-T295C
+Android Version    : 9
+Android SDK        : 28
+App VersionName    : 1.0
+App VersionCode    : 1
+************* Log Head ****************
+
+java.lang.NoSuchMethodException: <init> []
+	at java.lang.Class.getConstructor0(Class.java:2327)
+	at java.lang.Class.getConstructor(Class.java:1725)
+	at androidx.fragment.app.Fragment.instantiate(Fragment.java:443)
+ Caused by: androidx.fragment.app.Fragment$InstantiationException: Unable to instantiate fragment com.example.zw_engineering.ui.clp_fragment.LabourFragment: could not find Fragment constructor
+	at androidx.fragment.app.Fragment.instantiate(Fragment.java:462)
+	at androidx.fragment.app.FragmentContainer.instantiate(FragmentContainer.java:50)
+	at androidx.fragment.app.Fragment$2.instantiate(Fragment.java:2403)
+	at androidx.fragment.app.FragmentState.instantiate(FragmentState.java:80)
+	at androidx.fragment.app.FragmentManagerImpl.restoreAllState(FragmentManager.java:3109)
+	at androidx.fragment.app.Fragment.restoreChildFragmentState(Fragment.java:1524)
+	at androidx.fragment.app.Fragment.onCreate(Fragment.java:1497)
+	at androidx.fragment.app.Fragment.performCreate(Fragment.java:2414)
+	at androidx.fragment.app.FragmentManagerImpl.moveToState(FragmentManager.java:1418)
+	at androidx.fragment.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1784)
+	at androidx.fragment.app.FragmentManagerImpl.moveToState(FragmentManager.java:1852)
+	at androidx.fragment.app.FragmentManagerImpl.dispatchStateChange(FragmentManager.java:3269)
+	at androidx.fragment.app.FragmentManagerImpl.dispatchCreate(FragmentManager.java:3223)
+	at androidx.fragment.app.FragmentController.dispatchCreate(FragmentController.java:190)
+	at androidx.fragment.app.FragmentActivity.onCreate(FragmentActivity.java:369)
+	at androidx.appcompat.app.AppCompatActivity.onCreate(AppCompatActivity.java:85)
+	at com.example.zw_engineering.Default_bottom.onCreate(Default_bottom.java:29)
+	at android.app.Activity.performCreate(Activity.java:7340)
+	at android.app.Activity.performCreate(Activity.java:7331)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1275)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3119)
+ Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.zw_engineering/com.example.zw_engineering.Default_bottom}: androidx.fragment.app.Fragment$InstantiationException: Unable to instantiate fragment com.example.zw_engineering.ui.clp_fragment.LabourFragment: could not find Fragment constructor
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3139)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3282)
+	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1970)
+	at android.os.Handler.dispatchMessage(Handler.java:106)
+	at android.os.Looper.loop(Looper.java:214)
+	at android.app.ActivityThread.main(ActivityThread.java:7156)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:494)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
