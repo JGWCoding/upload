@@ -1,0 +1,23 @@
+************* Log Head ****************
+Time Of Crash      : 08-07_03-12-13
+Device Manufacturer: Google
+Device Model       : AOSP on IA Emulator
+Android Version    : 9
+Android SDK        : 28
+App VersionName    : 1.0
+App VersionCode    : 1
+************* Log Head ****************
+
+java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.Object java.util.List.get(int)' on a null object reference
+	at com.example.zw_engineering.ui.clp_fragment.LabourFragment3$3.onClick(LabourFragment3.java:163)
+	at android.view.View.performClick(View.java:6597)
+	at android.view.View.performClickInternal(View.java:6574)
+	at android.view.View.access$3100(View.java:778)
+	at android.view.View$PerformClick.run(View.java:25885)
+	at android.os.Handler.handleCallback(Handler.java:873)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:193)
+	at android.app.ActivityThread.main(ActivityThread.java:6669)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
